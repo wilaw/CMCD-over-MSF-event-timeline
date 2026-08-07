@@ -21,8 +21,8 @@ venue:
   type: "Working Group"
   mail: "moq@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/moq/"
-  github: "wilaw/SCTE35-over-MSF-Event-Timeline"
-  latest: "https://wilaw.github.io/SCTE35-over-MSF-Event-Timeline/draft-wilaw-moq-scte35-event-timeline.html"
+  github: "wilaw/CMCD-over-MSF-event-timeline"
+  latest: "https://wilaw.github.io/CMCD-over-MSF-event-timeline/draft-wilaw-moq-cmcd-event-timeline.html"
 
 author:
   - fullname: Will Law
@@ -67,7 +67,7 @@ This specification
 
 CMCD supports two reporting modes - Request Mode and Event Mode. Since Request mode is tied to
 HTTP requests, which are not present in MOQT, this specification constrains CMCD usage to those
-options offered in Event Mode. Request mode MUST NOT be used. 
+options offered in Event Mode. Request mode MUST NOT be used.
 
 Furthermore, there are certain keys under Event Mode which reference request semantics and therefore
 are not allowed in this specification. The keys which MUST NOT be used are: 'ab', 'cmsdd', 'cmsds',
@@ -76,45 +76,45 @@ are not allowed in this specification. The keys which MUST NOT be used are: 'ab'
 
 The following keys MAY be used in Event Mode: 'bl', 'bg', 'br', 'bs', 'bsa', 'bsd', 'bsda', 'cen',
 'cid', 'cs', 'dfa', 'e', 'ec', 'lb', 'ltc', 'msd', 'mtp', 'pb', 'pr', 'pt', 'sid', 'sn', 'st',
-'sta', 'tb', 'tbl', 'tpb' and 'ts'. 
+'sta', 'tb', 'tbl', 'tpb' and 'ts'.
 
-The Event key 'e' MUST not use the 'h' and 'rr' tokens. 
+The Event key 'e' MUST not use the 'h' and 'rr' tokens.
 
 When the CMCD spec refers to a 'manifest' in the description of key, interpret that as the 'catalog'
-in the context of this specification. 
+in the context of this specification.
 
-The version key 'v' MUST be present in each report and MUST carry a value of 2. 
+The version key 'v' MUST be present in each report and MUST carry a value of 2.
 
 # Catalog requirements
 
 ## Publish tracks
 A broadcaster triggers a catalog recipient to send CMCD data by including a 'publishTracks'
 (see {{MSF}} Sect 5.1.5) entry. That entry MUST point at a CMCD track {{cmcd-track}}. Multiple CMCD
-tracks MAY be included in the publishtracks array in order to target data at different destinations. 
+tracks MAY be included in the publishtracks array in order to target data at different destinations.
 
 
 ## CMCD track {#cmcd-track}
 A CMCD track defines a track which is to be published by the receiver of the catalog. It defines the
 configuration of the CMCD data to be sent within the payload of that track, as well as the namespace
-and name under which the track will be published. 
+and name under which the track will be published.
 
 An MSF track carrying {{CMCD}} data MUST
 
 * declare a packaging value of "eventtimeline".
 * declare an eventType value of "urn:cta:cmcd:2026".
 * be referenced in the 'publishTracks' array
-* carry a 'cmcd-config' {{cmcd-config}} custom track field. 
+* carry a 'cmcd-config' {{cmcd-config}} custom track field.
 
 ## Configuration {#cmcd-config}
 
 This specification defines a new, custom MOQT track field, intended solely for use within a
 CMCD track. The name of the field is "cmcd-config" and the value is a JSON object. The purpose of
 this field is to instruct the publisher on which CMCD keys to send in the track, how to send them and
-where to send them. 
+where to send them.
 
 The JSON Object contains the following fields:
 
-* 'events': an array of 
+* 'events': an array of
 
 ## Batching
 
@@ -158,4 +158,4 @@ This document adds one entry to the "MSF Event Timeline Types" registry.
 
 
 # Acknowledgments
-The IETF moq workgroup and the CTA WAVE CMCD workgroup. 
+The IETF moq workgroup and the CTA WAVE CMCD workgroup.

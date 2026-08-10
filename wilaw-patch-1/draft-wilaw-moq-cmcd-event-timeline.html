@@ -12,7 +12,6 @@
 <meta content="xml2rfc 3.34.0" name="generator">
 <meta content="MSF" name="keyword">
 <meta content="Eventtimeline" name="keyword">
-<meta content="SCTE35" name="keyword">
 <meta content="MOQT" name="keyword">
 <meta content="draft-wilaw-moq-cmcd-event-timeline-latest" name="ietf.draft">
 <!-- Generator version information:
@@ -1048,7 +1047,7 @@ svg {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Law</td>
-<td class="center">Expires 8 February 2027</td>
+<td class="center">Expires 11 February 2027</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1061,12 +1060,12 @@ svg {
 <dd class="internet-draft">draft-wilaw-moq-cmcd-event-timeline-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-08-07" class="published">7 August 2026</time>
+<time datetime="2026-08-10" class="published">10 August 2026</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
-<dd class="intended-status">Informational</dd>
+<dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2027-02-08">8 February 2027</time></dd>
+<dd class="expires"><time datetime="2027-02-11">11 February 2027</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1087,7 +1086,7 @@ svg {
       </h2>
 <p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
 <p id="section-note.1-2">
-        The latest revision of this draft can be found at <span><a href="https://wilaw.github.io/SCTE35-over-MSF-Event-Timeline/draft-wilaw-moq-scte35-event-timeline.html">https://wilaw.github.io/SCTE35-over-MSF-Event-Timeline/draft-wilaw-moq-scte35-event-timeline.html</a></span>.
+        The latest revision of this draft can be found at <span><a href="https://wilaw.github.io/CMCD-over-MSF-event-timeline/draft-wilaw-moq-cmcd-event-timeline.html">https://wilaw.github.io/CMCD-over-MSF-event-timeline/draft-wilaw-moq-cmcd-event-timeline.html</a></span>.
         Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-wilaw-moq-cmcd-event-timeline/">https://datatracker.ietf.org/doc/draft-wilaw-moq-cmcd-event-timeline/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
 <p id="section-note.1-3">
         Discussion of this document takes place on the
@@ -1095,7 +1094,7 @@ svg {
         which is archived at <span><a href="https://mailarchive.ietf.org/arch/browse/moq/">https://mailarchive.ietf.org/arch/browse/moq/</a></span>.
         Subscribe at <span><a href="https://www.ietf.org/mailman/listinfo/moq/">https://www.ietf.org/mailman/listinfo/moq/</a></span>.<a href="#section-note.1-3" class="pilcrow">¶</a></p>
 <p id="section-note.1-4">Source for this draft and an issue tracker can be found at
-        <span><a href="https://github.com/wilaw/SCTE35-over-MSF-Event-Timeline">https://github.com/wilaw/SCTE35-over-MSF-Event-Timeline</a></span>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
+        <span><a href="https://github.com/wilaw/CMCD-over-MSF-event-timeline">https://github.com/wilaw/CMCD-over-MSF-event-timeline</a></span>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
 </section>
 <div id="status-of-memo">
 <section id="section-boilerplate.1">
@@ -1116,7 +1115,7 @@ svg {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 8 February 2027.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 11 February 2027.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1162,22 +1161,19 @@ svg {
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.2">
                 <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="auto internal xref">4.2</a>.  <a href="#name-cmcd-track" class="internal xref">CMCD track</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.2.2.1">
+                    <p id="section-toc.1-1.4.2.2.2.1.1"><a href="#section-4.2.1" class="auto internal xref">4.2.1</a>.  <a href="#name-cmcd_data-object" class="internal xref">CMCD_DATA object</a></p>
+</li>
+                </ul>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.3">
                 <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="auto internal xref">4.3</a>.  <a href="#name-configuration" class="internal xref">Configuration</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.4">
-                <p id="section-toc.1-1.4.2.4.1"><a href="#section-4.4" class="auto internal xref">4.4</a>.  <a href="#name-batching" class="internal xref">Batching</a></p>
-</li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-examples" class="internal xref">Examples</a></p>
-<ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.1">
-                <p id="section-toc.1-1.5.2.1.1"><a href="#section-5.1" class="auto internal xref">5.1</a>.  <a href="#name-example-1-binary-encoding-w" class="internal xref">Example 1: Binary Encoding with PTS Timing</a></p>
-</li>
-            </ul>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-example-catalog-entry" class="internal xref">Example catalog entry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
             <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
@@ -1204,12 +1200,12 @@ svg {
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
 <p id="section-1-1">MOQT Streaming Format <span>[<a href="#MSF" class="cite xref">MSF</a>]</span> defines Event Timeline tracks as a generic mechanism for
-transmitting ad hoc data associated with MSF media tracks. CMCD <span>[<a href="#CMCD" class="cite xref">CMCD</a>]</span> defines outlines a
+transmitting ad hoc data associated with MSF media tracks. CMCD <span>[<a href="#CMCD" class="cite xref">CMCD</a>]</span> defines a
 means by which a media player can communicate structured data and have it processed consistently
 by delivery networks and third-party data collection services. This draft specifies how an MSF
 catalog can instruct a publisher to publish configurable CMCD data at a target destination using
 MSF Event Timeline tracks.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">This specification<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-2">This specification defines transmission for version 2 of CMCD.<a href="#section-1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="conventions-and-definitions">
@@ -1223,7 +1219,7 @@ described in BCP 14 <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</s
 appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="cmcd-mode-and-key-restrictions">
+<div id="restrictions">
 <section id="section-3">
       <h2 id="name-cmcd-mode-and-key-restricti">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-cmcd-mode-and-key-restricti" class="section-name selfRef">CMCD mode and key restrictions</a>
@@ -1233,13 +1229,14 @@ HTTP requests, which are not present in MOQT, this specification constrains CMCD
 options offered in Event Mode. Request mode <span class="bcp14">MUST NOT</span> be used.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <p id="section-3-2">Furthermore, there are certain keys under Event Mode which reference request semantics and therefore
 are not allowed in this specification. The keys which <span class="bcp14">MUST NOT</span> be used are: 'ab', 'cmsdd', 'cmsds',
-'d', 'dl', 'h', 'lab', 'nor', 'nr', 'ot', 'rc', 'rtp', 'sf', 'smrt', 'su','tab', 'ttfb', 'ttfbb',
+'d', 'dl', 'h', 'lab', 'nor', 'nr', 'ot', 'rc', 'rtp', 'sf', 'smrt', 'su', 'tab', 'ttfb', 'ttfbb',
 'ttlb' and 'url'.<a href="#section-3-2" class="pilcrow">¶</a></p>
 <p id="section-3-3">The following keys <span class="bcp14">MAY</span> be used in Event Mode: 'bl', 'bg', 'br', 'bs', 'bsa', 'bsd', 'bsda', 'cen',
 'cid', 'cs', 'dfa', 'e', 'ec', 'lb', 'ltc', 'msd', 'mtp', 'pb', 'pr', 'pt', 'sid', 'sn', 'st',
-'sta', 'tb', 'tbl', 'tpb' and 'ts'.<a href="#section-3-3" class="pilcrow">¶</a></p>
-<p id="section-3-4">The Event key 'e' <span class="bcp14">MUST</span> not use the 'h' and 'rr' tokens.<a href="#section-3-4" class="pilcrow">¶</a></p>
-<p id="section-3-5">When the CMCD spec refers to a 'manifest' in the description of key, interpret that as the 'catalog'
+'sta', 'tb', 'tbl' and 'tpb'.<a href="#section-3-3" class="pilcrow">¶</a></p>
+<p id="section-3-4">The Event key 'e' <span class="bcp14">MUST NOT</span> use the 'h' and 'rr' tokens. While the 'ts' data is mandatory for every
+report, it is transmitted as the index value of each event timeline record.<a href="#section-3-4" class="pilcrow">¶</a></p>
+<p id="section-3-5">When the CMCD spec refers to a 'manifest' in the description of a key, interpret that as the 'catalog'
 in the context of this specification.<a href="#section-3-5" class="pilcrow">¶</a></p>
 <p id="section-3-6">The version key 'v' <span class="bcp14">MUST</span> be present in each report and <span class="bcp14">MUST</span> carry a value of 2.<a href="#section-3-6" class="pilcrow">¶</a></p>
 </section>
@@ -1255,8 +1252,8 @@ in the context of this specification.<a href="#section-3-5" class="pilcrow">¶</
 <a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-publish-tracks" class="section-name selfRef">Publish tracks</a>
         </h3>
 <p id="section-4.1-1">A broadcaster triggers a catalog recipient to send CMCD data by including a 'publishTracks'
-(see <span>[<a href="#MSF" class="cite xref">MSF</a>]</span> Sect 5.1.5) entry. That entry <span class="bcp14">MUST</span> point at a CMCD track <a href="#cmcd-track" class="auto internal xref">Section 4.2</a>. Multiple CMCD
-tracks <span class="bcp14">MAY</span> be included in the publishtracks array in order to target data at different destinations.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+(see <span>[<a href="#MSF" class="cite xref">MSF</a>]</span> Section 5.1.5) entry. That entry <span class="bcp14">MUST</span> point at a CMCD track <a href="#cmcd-track" class="auto internal xref">Section 4.2</a>. Multiple CMCD
+tracks <span class="bcp14">MAY</span> be included in the publishTracks array in order to target data at different destinations.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="cmcd-track">
@@ -1266,7 +1263,8 @@ tracks <span class="bcp14">MAY</span> be included in the publishtracks array in 
         </h3>
 <p id="section-4.2-1">A CMCD track defines a track which is to be published by the receiver of the catalog. It defines the
 configuration of the CMCD data to be sent within the payload of that track, as well as the namespace
-and name under which the track will be published.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
+and name under which the track will be published. A CMCD track <span class="bcp14">MUST</span> only be included in a 'publishTracks'
+array and <span class="bcp14">MUST NOT</span> be present in a 'tracks' array.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
 <p id="section-4.2-2">An MSF track carrying <span>[<a href="#CMCD" class="cite xref">CMCD</a>]</span> data <span class="bcp14">MUST</span><a href="#section-4.2-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-4.2-3.1">
@@ -1279,9 +1277,45 @@ and name under which the track will be published.<a href="#section-4.2-1" class=
             <p id="section-4.2-3.3.1">be referenced in the 'publishTracks' array<a href="#section-4.2-3.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.2-3.4">
-            <p id="section-4.2-3.4.1">carry a 'cmcd-config' <a href="#cmcd-config" class="auto internal xref">Section 4.3</a> custom track field.<a href="#section-4.2-3.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.2-3.4.1">carry a 'cmcdConfig' <a href="#cmcd-config" class="auto internal xref">Section 4.3</a> custom track field.<a href="#section-4.2-3.4.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
+<p id="section-4.2-4">A CMCD track is an Event Timeline track (See <span>[<a href="#MSF" class="cite xref">MSF</a>]</span> Section 8). The "T" wall-clock time index <span class="bcp14">MUST</span> be used.
+The 'data' field of each timeline entry is defined as a CMCD_DATA object <a href="#cmcd-data" class="auto internal xref">Section 4.2.1</a>.<a href="#section-4.2-4" class="pilcrow">¶</a></p>
+<p id="section-4.2-5">Each CMCD track record <span class="bcp14">MUST</span> be published as a new Group unless batching is in effect, in which case multiple
+records <span class="bcp14">MUST</span> be accumulated within each Group. The Group ID <span class="bcp14">SHOULD</span> begin at 0 and then increment by one for
+the duration of the session.<a href="#section-4.2-5" class="pilcrow">¶</a></p>
+<p id="section-4.2-6">Each CMCD track record <span class="bcp14">MUST</span> be published as soon as possible after the event which triggered it, unless batching
+is in effect, in which case the batching constraints (see <a href="#cmcd-config" class="auto internal xref">Section 4.3</a>) apply.<a href="#section-4.2-6" class="pilcrow">¶</a></p>
+<div id="cmcd-data">
+<section id="section-4.2.1">
+          <h4 id="name-cmcd_data-object">
+<a href="#section-4.2.1" class="section-number selfRef">4.2.1. </a><a href="#name-cmcd_data-object" class="section-name selfRef">CMCD_DATA object</a>
+          </h4>
+<p id="section-4.2.1-1">The CMCD_DATA Object is a sequence of key-value pairs. The key is a string which matches one of the allowed
+CMCD keys specified in <a href="#restrictions" class="auto internal xref">Section 3</a>. The value is always a string and it holds the CMCD-defined value
+for that key. The value is NOT URLEncoded.<a href="#section-4.2.1-1" class="pilcrow">¶</a></p>
+<p id="section-4.2.1-2">The 'ts' key <span class="bcp14">MUST NOT</span> appear in the CMCD_DATA Object. The value of the 'ts' key <span class="bcp14">MUST</span> be used as the "T" value
+of the record index.<a href="#section-4.2.1-2" class="pilcrow">¶</a></p>
+<p id="section-4.2.1-3">Example CMCD track record<a href="#section-4.2.1-3" class="pilcrow">¶</a></p>
+<div class="lang-json sourcecode" id="section-4.2.1-4">
+<pre>
+{
+        "T": 1756885678361,
+        "data": {
+            "sid":"6e2fb550-c457-11e9-bb97-0800200c9a66",
+            "bl": 4068,
+            "br": "(5000;v 320;a)",
+            "bsd": 321,
+            "e":"t",
+            "sta": "p",
+            "v": 2
+        }
+}
+</pre><a href="#section-4.2.1-4" class="pilcrow">¶</a>
+</div>
+</section>
+</div>
 </section>
 </div>
 <div id="cmcd-config">
@@ -1290,48 +1324,116 @@ and name under which the track will be published.<a href="#section-4.2-1" class=
 <a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-configuration" class="section-name selfRef">Configuration</a>
         </h3>
 <p id="section-4.3-1">This specification defines a new, custom MOQT track field, intended solely for use within a
-CMCD track. The name of the field is "cmcd-config" and the value is a JSON object. The purpose of
+CMCD track. The name of the field is "cmcdConfig" and the value is a JSON <span>[<a href="#JSON" class="cite xref">JSON</a>]</span> object. The purpose of
 this field is to instruct the publisher on which CMCD keys to send in the track, how to send them and
 where to send them.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
 <p id="section-4.3-2">The JSON Object contains the following fields:<a href="#section-4.3-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-4.3-3.1">
-            <p id="section-4.3-3.1.1">'events': an array of<a href="#section-4.3-3.1.1" class="pilcrow">¶</a></p>
+            <p id="section-4.3-3.1.1">"events": an array containing one or more triggering events. Each event <span class="bcp14">MUST</span> be in the set ('abs','abe','ae',
+'as','b','bc','c','ce','e','m','pc','pe','pr','ps','sk','t','um'). This array <span class="bcp14">MUST NOT</span> be empty.<a href="#section-4.3-3.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.2">
+            <p id="section-4.3-3.2.1">"interval": optional, the time interval in milliseconds between 't' events. This field <span class="bcp14">MUST</span> only be present if the
+'t' event is included in the 'events' array. Intervals below 5000 <span class="bcp14">SHOULD NOT</span> be used.<a href="#section-4.3-3.2.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.3">
+            <p id="section-4.3-3.3.1">"enabledKeys": an array of the allowed CMCD keys to be included in the report. By default, all keys are excluded
+so each key <span class="bcp14">MUST</span> be explicitly enabled, with the exception of the 'v' key. The 'v' key is mandatory and <span class="bcp14">MUST</span> be
+included in each record even if it is not specified in the 'enabledKeys' array.<a href="#section-4.3-3.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.4">
+            <p id="section-4.3-3.4.1">"sid": optional, a session ID to use as the value of the 'sid' key. This field <span class="bcp14">MUST</span> only be present if the 'sid'
+key is included in the 'enabledKeys' array. If not provided and 'sid' is specified in the 'enabledKeys' array,
+then the publisher <span class="bcp14">MUST</span> synthesize its own session ID using the guidelines specified in <span>[<a href="#CMCD" class="cite xref">CMCD</a>]</span> Section 4.3.<a href="#section-4.3-3.4.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.5">
+            <p id="section-4.3-3.5.1">"batchCount": optional, the number of records to accrue before publishing a new Group.<a href="#section-4.3-3.5.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-4.3-3.6">
+            <p id="section-4.3-3.6.1">"batchInterval": optional, the minimum interval in milliseconds before publishing a new Group.<a href="#section-4.3-3.6.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-</section>
-</div>
-<div id="batching">
-<section id="section-4.4">
-        <h3 id="name-batching">
-<a href="#section-4.4" class="section-number selfRef">4.4. </a><a href="#name-batching" class="section-name selfRef">Batching</a>
-      </h3>
-</section>
-</div>
-</section>
-</div>
-<div id="examples">
-<section id="section-5">
-      <h2 id="name-examples">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-examples" class="section-name selfRef">Examples</a>
-      </h2>
-<p id="section-5-1">To illustrate the implementation of SCTE 35 within the MSF Event Timeline track, the following
-examples demonstrate the mapping of various timing sources — using MSF's native t, l, and m index
-reference fields — and the two supported encoding formats (Binary and XML).<a href="#section-5-1" class="pilcrow">¶</a></p>
-<div id="example-1-binary-encoding-with-pts-timing">
-<section id="section-5.1">
-        <h3 id="name-example-1-binary-encoding-w">
-<a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-example-1-binary-encoding-w" class="section-name selfRef">Example 1: Binary Encoding with PTS Timing</a>
-        </h3>
-<p id="section-5.1-1">This example shows the standard frame-accurate splice using a pts_time. Per Section 3.2 case 1,
-the record uses m, the calculated millisecond offset, and the payload is the Base64-encoded binary
-splice_info_section().<a href="#section-5.1-1" class="pilcrow">¶</a></p>
-<div class="lang-json sourcecode" id="section-5.1-2">
+<p id="section-4.3-4">If both batchCount and batchInterval are specified, then the publisher <span class="bcp14">MUST</span> publish a new Group when either constraint
+is first satisfied.<a href="#section-4.3-4" class="pilcrow">¶</a></p>
+<p id="section-4.3-5">An example cmcdConfig track entry, instructing the publisher, every 30 seconds and at every playstate change, to
+publish a CMCD record containing session ID (which has been provided), buffer length, bitrate, play state and
+absolute buffer starvation CMCD data.<a href="#section-4.3-5" class="pilcrow">¶</a></p>
+<div class="lang-json sourcecode" id="section-4.3-6">
 <pre>
-TBD
-</pre><a href="#section-5.1-2" class="pilcrow">¶</a>
+"cmcdConfig" : {
+    "events": ["t","ps"],
+    "interval": 30000,
+    "enabledKeys": ["sid","bl","br","sta","bsa"],
+    "sid":"6e2fb550-c457-11e9-bb97-0800200c9a66"
+}
+</pre><a href="#section-4.3-6" class="pilcrow">¶</a>
 </div>
 </section>
+</div>
+</section>
+</div>
+<div id="example-catalog-entry">
+<section id="section-5">
+      <h2 id="name-example-catalog-entry">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-example-catalog-entry" class="section-name selfRef">Example catalog entry</a>
+      </h2>
+<p id="section-5-1">This catalog excerpt shows the catalog instructing the publisher to send CMCD data to 3 different targets.
+Each target receives a different set of CMCD keys:<a href="#section-5-1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-5-2.1">
+          <p id="section-5-2.1.1">The first target is a player monitoring system, which receives general health information every 30s.<a href="#section-5-2.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-5-2.2">
+          <p id="section-5-2.2.1">The second target is a play state monitoring system. These reports are batched and then sent once a minute.<a href="#section-5-2.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-5-2.3">
+          <p id="section-5-2.3.1">The third target is an error collection system, which receives only player errors.<a href="#section-5-2.3.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+<p id="section-5-3">Note the use of the MSF variable substitution scheme to pass down a custom track name. This is a useful mechanism
+for giving each end-receiver a cacheable catalog while still allowing individualized reports.<a href="#section-5-3" class="pilcrow">¶</a></p>
+<div class="lang-json sourcecode" id="section-5-4">
+<pre>
+"publishTracks": [
+    {
+      "namespace": "example.com/collection/cmcd/health",
+      "name": "%player-id%",
+      "packaging": "eventtimeline",
+      "eventType": "urn:cta:cmcd:2026",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "cmcdConfig" : {
+         "events": ["t"],
+         "interval": 30000,
+         "enabledKeys": ["sid","bl","br","bs","ltc","msd","mtp"]
+      }
+    },
+    {
+      "namespace": "example.com/collection/cmcd/playstate",
+      "name": "%player-id%",
+      "packaging": "eventtimeline",
+      "eventType": "urn:cta:cmcd:2026",
+      "token": "kkjh68n3DVun23csFGk418kHNU5VDrwb...",
+      "cmcdConfig" : {
+         "events": ["ps"],
+         "batchInterval": 60000,
+         "enabledKeys": ["sid","ps"],
+         "sid":"6e2fb550-c457-11e9-bb97-0800200c9a66"
+      }
+    },
+    {
+      "namespace": "example.com/errors",
+      "name": "%player-id%",
+      "packaging": "eventtimeline",
+      "eventType": "urn:cta:cmcd:2026",
+      "cmcdConfig" : {
+         "events": ["e"],
+         "enabledKeys": ["sid","ec"]
+      }
+    }
+  ]
+
+</pre><a href="#section-5-4" class="pilcrow">¶</a>
 </div>
 </section>
 </div>
@@ -1341,7 +1443,13 @@ TBD
 <a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
       </h2>
 <p id="section-6-1">The carriage of CMCD signals within the MSF Event Timeline track inherits the security
-considerations of both the underlying MSF transport and the CMCD standard itself.<a href="#section-6-1" class="pilcrow">¶</a></p>
+considerations of both the underlying MSF transport and the CMCD standard itself.
+CMCD data is sent by an untrusted player and may therefore be falsified.<a href="#section-6-1" class="pilcrow">¶</a></p>
+<p id="section-6-2">The ability of a publishTrack to direct output at a third-party site could be used to DoS
+both the sender and receiver of the data if the CMCD payload were high and the interval low.
+Setting a 't' interval to 1, for example, would cause a very high report rate. Client implementers
+<span class="bcp14">SHOULD</span> protect themselves from high report rates by coercing low values to a higher, sustainable
+level.<a href="#section-6-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
@@ -1374,7 +1482,7 @@ considerations of both the underlying MSF transport and the CMCD standard itself
       <h2 id="name-acknowledgments">
 <a href="#section-8" class="section-number selfRef">8. </a><a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="section-8-1">The IETF moq workgroup and the CTA WAVE CMCD workgroup.<a href="#section-8-1" class="pilcrow">¶</a></p>
+<p id="section-8-1">Thanks to the IETF MOQ working group and the CTA WAVE CMCD working group for their review and input.<a href="#section-8-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-normative-references">

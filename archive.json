@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-08-09T01:02:59.255405+00:00",
+  "timestamp": "2026-08-11T01:03:43.753281+00:00",
   "repo": "wilaw/CMCD-over-MSF-event-timeline",
   "labels": [
     {
@@ -75,6 +75,34 @@
       "mergedBy": "wilaw",
       "mergeCommit": {
         "oid": "b02ee76e3dbf55a49f3d32ceae8d2e56ced77ac8"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOTxSOG879Eb9O",
+      "title": "Refine CMCD transmission specifications and metadata",
+      "url": "https://github.com/wilaw/CMCD-over-MSF-event-timeline/pull/2",
+      "state": "MERGED",
+      "author": "wilaw",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Updated document metadata and clarified CMCD specifications. Adjusted sections on key restrictions and configuration details.",
+      "createdAt": "2026-08-10T14:57:59Z",
+      "updatedAt": "2026-08-10T14:59:31Z",
+      "baseRepository": "wilaw/CMCD-over-MSF-event-timeline",
+      "baseRefName": "main",
+      "baseRefOid": "4a372803ad3d583395bfc98b7308c8567076948b",
+      "headRepository": "wilaw/CMCD-over-MSF-event-timeline",
+      "headRefName": "wilaw-patch-1",
+      "headRefOid": "7610dd5b864f6ff37cb0166021923e210031d7bf",
+      "closedAt": "2026-08-10T14:59:28Z",
+      "mergedAt": "2026-08-10T14:59:28Z",
+      "mergedBy": "wilaw",
+      "mergeCommit": {
+        "oid": "3265516e411b3cdd40b1351eb9d879bb2f37b9f8"
       },
       "comments": [],
       "reviews": []

@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-08-11T01:03:43.753281+00:00",
+  "timestamp": "2026-08-13T01:12:55.975693+00:00",
   "repo": "wilaw/CMCD-over-MSF-event-timeline",
   "labels": [
     {
@@ -49,7 +49,24 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 3,
+      "id": "I_kwDOTxSOG88AAAABMQgsCQ",
+      "title": "reporting in request mode",
+      "url": "https://github.com/wilaw/CMCD-over-MSF-event-timeline/issues/3",
+      "state": "OPEN",
+      "author": "gwendalsimon",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "The draft says that \"_Since Request mode is tied to HTTP requests, which are not present in MOQT, this specification constrains CMCD usage to those options offered in Event Mode. Request mode MUST NOT be used._' \n\nIt could be possible to declare a CMCD track that _depends_ on a given track. And then the Subscriber could report a CMCD data object related to the Location of that track.\n\nIn the catalog, it would be something like\n{\n  \"version\": \"1\",\n  \"generatedAt\": 1746104606044,\n  \"tracks\": [\n    {\n      \"name\": \"video\",\n      \"namespace\": \"broadcast.example.com/live/stream1\",\n      \"packaging\": \"loc\",\n      \"isLive\": true,\n      \"targetLatency\": 2000,\n      \"role\": \"video\",\n      \"renderGroup\": 1,\n      \"codec\": \"av01.0.08M.10.0.110.09\",\n      \"width\": 1920,\n      \"height\": 1080,\n      \"framerate\": 30,\n      \"bitrate\": 1500000\n    },\n  ],\n  \"publishTracks\": [\n     {\n      \"namespace\": \"example.com/collection/cmcd/report\",\n      \"name\": \"%player-id%\",\n      \"packaging\": \"eventtimeline\",\n      \"eventType\": \"urn:cta:cmcd:2026\",\n      **\"depends\": \"video\"**\n      \"cmcdConfig\" : {\n         **\"events\": [\"L\"],**\n         \"enabledKeys\": [\"sid\",\"bl\",\"br\",\"bs\",\"ltc\",\"msd\",\"mtp\"]\n     }\n    ]\n}\n\nAnd then the CMCD track record would be \n{\n        **\"L\": (12,0),**\n        \"data\": {\n            \"sid\":\"6e2fb550-c457-11e9-bb97-0800200c9a66\",\n            \"bl\": 4068,\n            \"br\": \"(5000;v 320;a)\",\n            \"bsd\": 321,\n            \"e\":\"t\",\n            \"sta\": \"p\",\n            \"v\": 2\n        }\n}",
+      "createdAt": "2026-08-11T07:02:18Z",
+      "updatedAt": "2026-08-11T07:02:18Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
